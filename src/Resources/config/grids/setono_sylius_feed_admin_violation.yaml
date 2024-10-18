@@ -11,6 +11,12 @@ sylius_grid:
                             feed: $id
             limits: [200, 100, 500, 1000]
             fields:
+                channel:
+                    type: string
+                    label: setono_sylius_feed.ui.channel
+                locale:
+                    type: string
+                    label: setono_sylius_feed.ui.locale
                 severity:
                     type: string
                     label: setono_sylius_feed.ui.severity
@@ -22,3 +28,20 @@ sylius_grid:
                     label: setono_sylius_feed.ui.data
                     options:
                         template: "@SetonoSyliusFeedPlugin/Admin/Violation/Grid/Field/data.html.twig"
+            filters:
+                channel:
+                    type: entity
+                    label: setono_sylius_feed.ui.channel
+                    form_options:
+                        class: "%sylius.model.channel.class%"
+                locale:
+                    type: entity
+                    label: setono_sylius_feed.ui.locale
+                    form_options:
+                        class: "%sylius.model.locale.class%"
+                severity:
+                    type: string
+                    label: setono_sylius_feed.ui.severity
+                data:
+                    type: string
+                    label: setono_sylius_feed.ui.data

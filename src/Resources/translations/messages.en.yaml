@@ -8,6 +8,7 @@ setono_sylius_feed:
             feed_type_placeholder: Choose feed type...
     ui:
         click_to_copy: Click to copy
+        channel: Channel
         count: Count
         data: Data
         edit_feed: Edit feed
@@ -17,6 +18,7 @@ setono_sylius_feed:
         generate_feed: Generate feed
         link: Link
         link_copied: Link copied
+        locale: Locale
         manage_feeds: Manage feeds
         message: Message
         name: Name
